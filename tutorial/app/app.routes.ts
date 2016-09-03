@@ -1,7 +1,7 @@
 import {RouterConfig} from "@angular/router";
 import {nsProvideRouter} from "nativescript-angular/router"
-import {LoginComponent} from "./Login/login.component";
-import {DashboardComponent} from './Dashboard/dashboard.component';
+import {LoginComponent} from "./Pages/Login/login.component";
+import {DashboardComponent} from './Pages/Dashboard/dashboard.component';
 
 export const routes: RouterConfig = [
   { path: "", component: LoginComponent },
