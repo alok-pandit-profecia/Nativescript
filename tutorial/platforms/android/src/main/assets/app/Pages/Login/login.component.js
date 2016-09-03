@@ -1,19 +1,16 @@
 "use strict";
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var login_block_component_1 = require('./../../reusable-components/login-block.component');
 var LoginComponent = (function () {
-    function LoginComponent(_router) {
-        this._router = _router;
+    function LoginComponent() {
     }
-    LoginComponent.prototype.onTap = function () {
-        this._router.navigate(["/dashboard"]);
-    };
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'login',
-            templateUrl: 'Login/login.component.html'
+            templateUrl: 'Login/login.component.html',
+            directives: [login_block_component_1.LoginBlockComponent]
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], LoginComponent);
     return LoginComponent;
 }());

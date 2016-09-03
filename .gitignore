@@ -34,3 +34,7 @@ typings
 
 #Platforms Folder
 platforms
+
+#js & js.map
+*.js
+*.js.map

@@ -1,16 +1,12 @@
 import {Component} from '@angular/core';
-import {Router} from '@angular/router';
+import {LoginBlockComponent} from './../../reusable-components/login-block.component';
 
 @Component({
     selector: 'login',
-    templateUrl: 'Login/login.component.html'
+    templateUrl: 'Login/login.component.html',
+    directives: [LoginBlockComponent]
 }) 
 
 export class LoginComponent {
 
-    constructor(private _router: Router) {}
-
-    onTap() {
-        this._router.navigate(["/dashboard"]);
-    }
 }
