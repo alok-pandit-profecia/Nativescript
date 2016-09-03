@@ -1,13 +1,13 @@
 import {Component} from "@angular/core";
+import {NS_ROUTER_DIRECTIVES} from "nativescript-angular/router";
+import {Router} from "@angular/router";
 
 @Component({
-    selector: "my-app",
-    templateUrl: "app.component.html",
+  selector: "my-app",
+  directives: [NS_ROUTER_DIRECTIVES],
+  template: "<page-router-outlet></page-router-outlet>"
 })
-export class AppComponent {
-    
-    public onTap() {
 
-    }
-    
+export class AppComponent {
+
 }

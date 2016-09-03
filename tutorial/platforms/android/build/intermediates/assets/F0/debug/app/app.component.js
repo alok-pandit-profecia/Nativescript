@@ -1,30 +1,21 @@
 "use strict";
 var core_1 = require("@angular/core");
+var router_1 = require("nativescript-angular/router");
+var router_2 = require("@angular/router");
 var AppComponent = (function () {
-    function AppComponent() {
-        this.counter = 16;
+    function AppComponent(_router) {
+        this._router = _router;
     }
-    Object.defineProperty(AppComponent.prototype, "message", {
-        get: function () {
-            if (this.counter > 0) {
-                return this.counter + " taps left";
-            }
-            else {
-                return "Hoorraaay! \nYou are ready to start building!";
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
     AppComponent.prototype.onTap = function () {
-        this.counter--;
+        this._router.navigate(["/dashboard"]);
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: "my-app",
-            templateUrl: "app.component.html",
+            directives: [router_1.NS_ROUTER_DIRECTIVES],
+            template: "<page-router-outlet></page-router-outlet>"
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_2.Router])
     ], AppComponent);
     return AppComponent;
 }());
