@@ -6,7 +6,7 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'dashboard',
-            template: "<Label text=\"DashBoard\"></Label>"
+            template: "<Label text=\" Yo Yo DashBoard\"></Label>"
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardComponent);
