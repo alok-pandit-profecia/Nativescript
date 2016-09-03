@@ -33,8 +33,13 @@ $RECYCLE.BIN/
 typings
 
 #Platforms Folder
-platforms/
-platforms\
+platforms
+/platforms
+/hooks
+/node_modules
+/lib
+/debugger
+/dist
 
 #js & js.map
 *.js
