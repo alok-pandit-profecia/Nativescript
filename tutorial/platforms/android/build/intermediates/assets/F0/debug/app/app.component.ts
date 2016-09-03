@@ -10,10 +10,4 @@ import {Router} from "@angular/router";
 
 export class AppComponent {
 
-    constructor(private _router: Router) {}
-
-    onTap() {
-        this._router.navigate(["/dashboard"])
-    }
-
 }

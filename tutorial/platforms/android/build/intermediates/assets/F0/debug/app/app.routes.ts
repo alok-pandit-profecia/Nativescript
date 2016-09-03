@@ -1,10 +1,10 @@
 import {RouterConfig} from "@angular/router";
 import {nsProvideRouter} from "nativescript-angular/router"
-import {AppComponent} from "./app.component";
-import {DashboardComponent} from './Dashboard/dashboard.component';
+import {LoginComponent} from "./Pages/Login/login.component";
+import {DashboardComponent} from './Pages/Dashboard/dashboard.component';
 
 export const routes: RouterConfig = [
-  { path: "", component: AppComponent },
+  { path: "", component: LoginComponent },
   { path: "dashboard", component: DashboardComponent }
 ];
 

@@ -3,7 +3,7 @@ import {LoginBlockComponent} from './../../reusable-components/login-block.compo
 
 @Component({
     selector: 'login',
-    templateUrl: 'Login/login.component.html',
+    templateUrl: 'Pages/Login/login.component.html',
     directives: [LoginBlockComponent]
 }) 
 
